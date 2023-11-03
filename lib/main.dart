@@ -10,7 +10,6 @@ void main() {
   );
 }
 
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.green,
-            title: Text('GitHub Repositories'),
+            title: const Text('GitHub Repositories'),
           ),
           body: GitHubRepositoriesList(),
         ),
@@ -30,4 +29,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

@@ -27,7 +27,7 @@ class GitHubRepositoriesList extends ConsumerWidget {
           },
         );
       },
-      loading: () => Center(child: CircularProgressIndicator()),
+      loading: () => const Center(child: CircularProgressIndicator(color: Colors.green,)),
       error: (error, stackTrace) => Center(child: Text('Error: $error')),
     );
   }

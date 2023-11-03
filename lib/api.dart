@@ -29,7 +29,7 @@ class GitHubRepository {
 }
 
 final githubRepositoriesProvider = FutureProvider<List<GitHubRepository>>(
-      (ref) async {
+  (ref) async {
     final response = await http.get(Uri.parse(
         'https://api.github.com/search/repositories?q=created:>2022-04-29&sort=stars&order=desc'));
 
